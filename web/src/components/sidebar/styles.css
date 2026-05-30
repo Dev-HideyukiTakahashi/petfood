@@ -1,0 +1,49 @@
+.custom-sidebar {
+  position: fixed;
+  top: 0;
+  right: -500px;
+  width: 500px;
+  height: 100vh;
+  z-index: 10050;
+  transition: right 0.3s ease-in-out;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.custom-sidebar.opened {
+  right: 0;
+}
+
+.sidebar-header {
+  flex-shrink: 0; /* Impede que o cabeçalho encolha */
+}
+
+.sidebar-content {
+  /* A área de conteúdo agora controla o scroll */
+  scrollbar-width: thin;
+  scrollbar-color: #495057 #212529;
+}
+
+/* Otimização visual para a barra de rolagem */
+.sidebar-content::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar-content::-webkit-scrollbar-thumb {
+  background-color: #495057;
+  border-radius: 10px;
+}
+
+.sidebar-footer {
+  flex-shrink: 0; /* Impede que o rodapé encolha */
+  margin-top: auto; /* Empurra o rodapé para baixo */
+}
+
+.sidebar-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10040;
+}

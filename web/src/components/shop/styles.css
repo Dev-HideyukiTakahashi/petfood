@@ -1,0 +1,47 @@
+.petshop-card {
+  margin-top: 20px;
+  width: 314px;
+  height: 96px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.04);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+  cursor: pointer;
+  border: 1px solid #e9ecef;
+}
+
+.petshop-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.petshop-card.active {
+  border: 2px solid #00e676 !important;
+  background-color: rgba(0, 230, 118, 0.05) !important;
+  box-shadow: 0px 4px 12px rgba(0, 230, 118, 0.15) !important;
+}
+
+.petshop-logo-container {
+  width: 60px;
+  height: 60px;
+}
+
+.petshop-content {
+  line-height: 1.2;
+}
+
+.petshop-title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.petshop-infos {
+  font-size: 11px;
+}
+
+.petshop-badge {
+  font-size: 10px;
+  padding: 4px 6px;
+}

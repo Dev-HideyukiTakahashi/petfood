@@ -1,0 +1,28 @@
+.petshop-list-grid {
+  height: 138px;
+  max-height: 138px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding-bottom: 8px;
+}
+
+.petshop-list-grid::-webkit-scrollbar {
+  height: 6px;
+}
+.petshop-list-grid::-webkit-scrollbar-thumb {
+  background-color: #ced4da;
+  border-radius: 10px;
+}
+.petshop-list-grid::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.google-map-container {
+  min-height: 400px;
+}
